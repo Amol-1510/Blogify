@@ -28,13 +28,6 @@ sx={{
          </Box>
         }
          <Box display="flex" marginLeft="auto">
-           {!isLoggedIn && <> <Button 
-           LinkComponent={Link} to="/auth"
-           variant="contained" sx={{margin:1 , borderRadius:10}} color="warning" > Login </Button>
-           <Button 
-           LinkComponent={Link} to="/auth"
-           variant="contained" sx={{margin:1 , borderRadius:10}} color="warning"> Sign Up </Button>
-            </>}
            {isLoggedIn && <Button 
            onClick={()=> dispatch(authActions.logout())}
            LinkComponent={Link} to="/auth"

@@ -28,7 +28,7 @@ const Auth = () => {
     name:inputs.name,  
     email: inputs.email,
       password : inputs.password
-    }).catch(alert("Wrong Credentials!!"));
+    }).catch((err) => console.log(err));
    
     const data = await res.data;
     console.log(data);
